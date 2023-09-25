@@ -1,0 +1,263 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #FDFD96;	
+	overflow-x: hidden;
+}
+	
+
+.main
+{
+	padding: 15px; 
+	display:  flex;
+	flex-wrap: wrap;
+	justify-content: right;
+	align-items: center;
+	height: 100vh;
+}
+
+
+.main__section__display
+{
+	width: 50%;
+	margin: auto;
+}
+		
+
+.main__section__Photo--FotoYo
+{
+	margin-left: -15px;
+
+	display:  flex;
+	align-items: flex-end;
+	
+	/*margin-right:  -15px;*/
+	height: 100%;
+
+	position: fixed;
+	left: 0;
+	width: 20%;
+}
+
+.main__section__Photo--FotoYo img
+{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	width: 100%;
+	height: 100%;
+	display: absolute;
+	bottom: 0;
+}
+
+
+.main__section__display__element h1
+{
+	font-size: 4rem;
+}
+
+.main__section__display__element
+{
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	opacity: 0;
+
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.main__section__display__element__container
+{
+	background-color: white;
+	text-align: center;
+	border: 5px solid #000;
+}
+
+.main__section__display__element--Sobre-mi
+{
+	order:1;
+
+	transform: translate(-100%,100%);
+}
+
+
+
+
+.main__section__display__element--Experiencia-Laboral
+{
+	/*order:1;*/
+	flex: 50%;
+	order:0;
+
+	/*transform: translate(-100%,100%);
+  	-scale: 0;*/
+
+}
+
+.main__section__display__element--Contacto
+{
+	order:2;	
+	flex: 50%;
+	
+}
+
+.main__section__display__Carrousel
+{
+	height: 250px;
+	width: 100%;
+	overflow:hidden;
+}
+
+.main__section__display__Carrousel__elements
+{
+	width: 250%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+
+	animation: carrousselGo 15s infinite;	
+}
+
+.main__section__display__Carrousel__elements a
+{
+	width: 100px;
+	height: 100px; 
+}
+
+.main__section__display__Carrousel__elements__element
+{
+	background-image: url("../Resources/images/defaoultIcon.png");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+
+.main__section__display__Carrousel__elements__element--Unity
+{
+	background-image: url("../Resources/images/Logos/UnityLogo.png");
+}
+
+.main__section__display__Carrousel__elements__element--cSharp
+{
+	background-image: url("../Resources/images/Logos/cSharpLogo.png");
+}
+.main__section__display__Carrousel__elements__element--Jira
+{
+	background-image: url("../Resources/images/Logos/JiraLogo.png");
+}
+.main__section__display__Carrousel__elements__element--Git
+{
+	background-image: url("../Resources/images/Logos/GitLogo.png");
+}
+.main__section__display__Carrousel__elements__element--Kotlin
+{
+	background-image: url("../Resources/images/Logos/KotlinLogo.png");
+}
+.main__section__display__Carrousel__elements__element--Swift
+{
+	background-image: url("../Resources/images/Logos/SwiftLogo.svg");
+}
+.main__section__display__Carrousel__elements__element--HTML
+{
+	background-image: url("../Resources/images/Logos/HTMLLogo.png");
+}
+.main__section__display__Carrousel__elements__element--CSS
+{
+	background-image: url("../Resources/images/Logos/CSSLogo.png");
+}
+.main__section__display__Carrousel__elements__element--JS
+{
+	background-image: url("../Resources/images/Logos/JSLogo.png");
+}
+.main__section__display__Carrousel__elements__element--Java
+{
+	background-image: url("../Resources/images/Logos/JavaLogo.png");
+}
+
+.main__section__display__Carrousel__elements__element--Cmas
+{
+	background-image: url("../Resources/images/Logos/CmasLogo.png");
+}
+
+
+@keyframes slideIn
+{
+	0%{
+		transform: translate(-100%,50%);
+  		opacity: 0;
+	}
+	25%
+	{
+		opacity: 0
+	}
+	50%
+	{
+		opacity: 1
+	}
+	100%{
+		transform: translate(0,0);
+  		opacity: 1
+	}
+}
+
+@keyframes slideOut
+{
+	0%{
+		transform: translate(0,0);
+  		opacity: 1
+		
+
+	}
+	25%
+	{
+		opacity: 1
+	}
+	50%
+	{
+		opacity: 0
+	}
+	100%{
+		transform: translate(100%, -100%);
+  		opacity: 0;
+  		display: none;
+	}
+}
+
+@keyframes slideOutDown
+{
+	0%{
+		transform: translate(0,0);
+  		opacity: 1
+	}
+	25%
+	{
+		opacity: 1
+	}
+	50%
+	{
+		opacity: 0
+	}
+	100%{
+		transform: translate(150%, 0);
+  		opacity: 0;
+  		display: none;
+	}
+}
+
+
+@keyframes carrousselGo
+{
+	0%{
+		margin-left: 0;
+	}
+	100%{
+		margin-left: -160%;
+	}
+}
