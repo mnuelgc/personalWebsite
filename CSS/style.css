@@ -62,10 +62,10 @@ body
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	opacity: 0;
+/*	opacity: 0;
 
 	animation-duration: 1s;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards;*/
 }
 
 .main__section__display__element__container
@@ -138,50 +138,106 @@ body
 	background-position: center;
 }
 
+.main__section__display__element__Tech
+{
+	width: 100%;
+}
 
-.main__section__display__Carrousel__elements__element--Unity
+.main__section__display__element__Tech__information__header
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.main__section__display__element__Tech__information__header__image
+{
+	background-image: url("../Resources/images/defaoultIcon.png");
+	width: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.main__section__display__element__Tech__information__where
+{
+	text-align: left;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.main__section__display__element__Tech__Related
+{
+	margin-bottom: 25px;
+}
+
+.main__section__display__element__Tech__Related__elements
+{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.main__section__display__element__Tech__Related__elements a
+{
+	width: 50px;
+	height: 50px;
+}
+
+
+.main__section__display__element__Tech__Related__elements__element
+{
+	background-image: url("../Resources/images/defaoultIcon.png");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.backgroundImage--Unity
 {
 	background-image: url("../Resources/images/Logos/UnityLogo.png");
 }
 
-.main__section__display__Carrousel__elements__element--cSharp
+.backgroundImage--cSharp
 {
 	background-image: url("../Resources/images/Logos/cSharpLogo.png");
 }
-.main__section__display__Carrousel__elements__element--Jira
+.backgroundImage--Jira
 {
 	background-image: url("../Resources/images/Logos/JiraLogo.png");
 }
-.main__section__display__Carrousel__elements__element--Git
+.backgroundImage--Git
 {
 	background-image: url("../Resources/images/Logos/GitLogo.png");
 }
-.main__section__display__Carrousel__elements__element--Kotlin
+.backgroundImage--Kotlin
 {
 	background-image: url("../Resources/images/Logos/KotlinLogo.png");
 }
-.main__section__display__Carrousel__elements__element--Swift
+.backgroundImage--Swift
 {
 	background-image: url("../Resources/images/Logos/SwiftLogo.svg");
 }
-.main__section__display__Carrousel__elements__element--HTML
+.backgroundImage--HTML
 {
 	background-image: url("../Resources/images/Logos/HTMLLogo.png");
 }
-.main__section__display__Carrousel__elements__element--CSS
+.backgroundImage--CSS
 {
 	background-image: url("../Resources/images/Logos/CSSLogo.png");
 }
-.main__section__display__Carrousel__elements__element--JS
+.backgroundImage--JS
 {
 	background-image: url("../Resources/images/Logos/JSLogo.png");
 }
-.main__section__display__Carrousel__elements__element--Java
+.backgroundImage--Java
 {
 	background-image: url("../Resources/images/Logos/JavaLogo.png");
 }
 
-.main__section__display__Carrousel__elements__element--Cmas
+.backgroundImage--Cmas
 {
 	background-image: url("../Resources/images/Logos/CmasLogo.png");
 }
