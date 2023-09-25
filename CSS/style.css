@@ -131,7 +131,9 @@ body
 	align-items: center;
 
 
-	animation: carrousselGo 15s infinite;	
+	animation: carrousselGo 10s infinite;
+	animation-timing-function: linear;	
+	 animation-direction: alternate;
 }
 
 .main__section__display__Carrousel__elements a
@@ -330,6 +332,6 @@ body
 		margin-left: 0;
 	}
 	100%{
-		margin-left: -160%;
+		margin-left: -150%;
 	}
 }
