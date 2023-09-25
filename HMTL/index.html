@@ -9,7 +9,7 @@
 		<link href= "../css/style.css" rel ="stylesheet">
 	</head>
 
-	<body>		
+	<body id ="body">		
 		<header>
 			
 			<!-- Boton para cambiar de idioma -->
@@ -48,32 +48,32 @@
 						<section class="main__section__display__Carrousel main__section__display__element__container">
 							<section class="main__section__display__Carrousel__elements">
 
-								<a onClick="showTechSelected(0)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Unity"></article></a>
+								<a onClick="showTechInformation(0)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Unity"></article></a>
 
-								<a onClick="showTechSelected(1)"><article class="main__section__display__Carrousel__elements__element backgroundImage--cSharp"></article></a>
+								<a onClick="showTechInformation(1)"><article class="main__section__display__Carrousel__elements__element backgroundImage--cSharp"></article></a>
 
-								<a onClick="showTechSelected(2)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Jira"></article></a>
+								<a onClick="showTechInformation(2)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Jira"></article></a>
 
-								<a onClick="showTechSelected(3)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Git"></article></a>
+								<a onClick="showTechInformation(3)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Git"></article></a>
 
-								<a onClick="showTechSelected(4)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Kotlin"></article></a>
+								<a onClick="showTechInformation(4)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Kotlin"></article></a>
 
-								<a onClick="showTechSelected(5)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Swift"></article></a>
+								<a onClick="showTechInformation(5)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Swift"></article></a>
 
-								<a onClick="showTechSelected(6)"><article class="main__section__display__Carrousel__elements__element backgroundImage--HTML"></article></a>
+								<a onClick="showTechInformation(6)"><article class="main__section__display__Carrousel__elements__element backgroundImage--HTML"></article></a>
 
-								<a onClick="showTechSelected(7)"><article class="main__section__display__Carrousel__elements__element backgroundImage--CSS"></article></a>
+								<a onClick="showTechInformation(7)"><article class="main__section__display__Carrousel__elements__element backgroundImage--CSS"></article></a>
 
-								<a onClick="showTechSelected(8)"><article class="main__section__display__Carrousel__elements__element backgroundImage--JS"></article></a>
+								<a onClick="showTechInformation(8)"><article class="main__section__display__Carrousel__elements__element backgroundImage--JS"></article></a>
 
-								<a onClick="showTechSelected(9)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Java"></article></a>
+								<a onClick="showTechInformation(9)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Java"></article></a>
 
-								<a onClick="showTechSelected(10)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Cmas"></article></a>
+								<a onClick="showTechInformation(10)"><article class="main__section__display__Carrousel__elements__element backgroundImage--Cmas"></article></a>
 							</section>
 						</section>
 
-						<section class = "main__section__display__element__Tech main__section__display__element__container">
-							
+						<section id = "techInformation" class = "main__section__display__element__Tech main__section__display__element__container">
+							<div onClick ="hideTechInformation()" class ="crossClose"></div>
 							<section class = "main__section__display__element__Tech__information">
 								<section class ="main__section__display__element__Tech__information__header">
 									<h4 id = techName>Tech Name</h4>

@@ -1,16 +1,6 @@
 /**************************/
 /*Technologies objects */
 /**************************/
-/*
-class Technologies {
-	cosntructor(id, name, imageClassCSS)
-	{
-		this.id = id;
-		this.name = name;
-		this.imageClassCSS = imageClassCSS;
-	}
-}
-*/
 
 function Technologies(id, name, imageClassCSS)
 {
@@ -119,4 +109,31 @@ function showTechSelected(index)
 
 }
 
-showTechSelected(0); 
+function showTechInformation(index)
+{
+	var techInfo = document.getElementById("techInformation");
+	if (techInfo.style.opacity == 0)
+	{
+		var body = document.getElementById("body");
+		techInfo.style.opacity = 1;
+		techInfo.style.height = "auto"; 
+		body.style.overflowY =  "hidden";
+		
+		
+	}
+	showTechSelected(index);
+}
+
+function hideTechInformation()
+{
+	var techInfo = document.getElementById("techInformation");
+	var body = document.getElementById("body");
+	body.style.overflowY =  "scroll";
+	techInfo.style.opacity = 0;
+		setTimeout(() => {
+		techInfo.style.height = 0; 
+		}, 800);
+	
+	
+}
+
